@@ -7,9 +7,11 @@ import {
   //disableButtons,
   enableButtons,
   playCompletedSoundEffect,
+  playButtonEffect,
 } from "../../HelperFunctions.js";
 
 const SelectionSort = (array, animationSpeed) => {
+  playButtonEffect();
   // Disabling the buttons so that the animation cannot be interrupted.
   //disableButtons();
 

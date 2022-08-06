@@ -5,7 +5,7 @@ import "./ButtonsBar.css";
 
 export default class ButtonsBar extends Component {
   render() {
-    
+
     return (
       <div className="buttons-bar">
         <button onClick={() => this.props.generateNewArray()} id="reset">
@@ -35,7 +35,7 @@ export default class ButtonsBar extends Component {
         <button
           id="mergeSortButton"
           onClick={() => this.props.mergeSort()}
-          className="buttonStyle1"
+          className="buttonStyle2"
         >
           Merge Sort
         </button>

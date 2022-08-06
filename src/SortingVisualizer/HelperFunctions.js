@@ -1,4 +1,5 @@
 import CompletedEffect from "./sounds/CompletedEffect.mp3";
+import click from "./sounds/click.mp3";
 
 const right_color_bar = document.getElementsByClassName("right-color-bar");
 const left_color_bar = document.getElementsByClassName("left-color-bar");
@@ -70,6 +71,7 @@ export function enableButtons() {
   document.getElementById("bubbleSortButton").disabled = false;
   document.getElementById("selectionSortButton").disabled = false;
   document.getElementById("insertionSortButton").disabled = false;
+  document.getElementById("mergeSortButton").disabled = false;
   document.getElementById("range-slider").style.opacity = 1;
   document.getElementById("range-slider").style.visibility = "visible";
 }
@@ -80,6 +82,7 @@ export function disableButtons() {
   document.getElementById("bubbleSortButton").disabled = true;
   document.getElementById("selectionSortButton").disabled = true;
   document.getElementById("insertionSortButton").disabled = true;
+  document.getElementById("mergeSortButton").disabled = true;
   document.getElementById("range-slider").style.opacity = 0;
   document.getElementById("range-slider").style.visibility = "hidden";
 }
@@ -94,4 +97,8 @@ export function playAudio(myAudio) {
 
 export function playCompletedSoundEffect() {
   playAudio(CompletedEffect);
+}
+
+export function playButtonEffect() {
+  playAudio(click);
 }

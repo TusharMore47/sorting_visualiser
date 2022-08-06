@@ -11,9 +11,10 @@ import BubbleSort from "./SortingAlgorithms/BubbleSort/BubbleSort.js";
 import SelectionSort from "./SortingAlgorithms/SelectionSort/SelectionSort.js";
 import InsertionSort from "./SortingAlgorithms/InsertionSort/InsertionSort.js";
 // .. STYLE .. //
-import "./SortingVisualizer.css";
+import "./App.css";
 // .. SOUNDS .. //
 import ResetEffect from "./sounds/ResetEffect.mp3";
+import gen from "./sounds/gen.mp3";
 
 export default class SortingVisualizer extends Component {
   constructor(props) {
@@ -49,6 +50,7 @@ export default class SortingVisualizer extends Component {
 
   // ## This function generates new random array of size "numberOfArrayBars". ## //
   generateNewArray() {
+    playAudio(gen);
     const array = [];
     for (let i = 0; i < this.state.numberOfArrayBars; i++) {
       // ## Generates an element between 5 and 70, and pushes it into the array. ## //

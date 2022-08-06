@@ -11,10 +11,9 @@
   text-transform: uppercase;
   font-size: xx-large;
   letter-spacing: 1vw;
-  background: linear-gradient(90deg, #000, #fff, #000);
-  background-repeat: no-repeat;
+  background: linear-gradient(150deg, rgba(0, 0, 0, 0.537), #fff, #000);
   background-size: 80%;
-  animation: animate 3s linear infinite;
+  animation: animate 6s linear infinite;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);

@@ -13,8 +13,8 @@ button {
   padding-right: 2%;
   border-radius: 50vw;
   font-size: medium;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   transition: 0.3s;
 }
 
@@ -44,21 +44,26 @@ button:hover {
 }
 
 .buttonStyle1:hover {
-  border-color: green;
-  color: green;
+  border-color: rgb(160, 0, 185);
+  color: rgb(160, 0, 185);
 }
 
 .buttonStyle2:hover {
-  border-color: peru;
-  color: peru;
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
 #reset {
   opacity: 0.6;
-  background-color: orangered;
+  color: rgb(28, 34, 33);
+  background-color: rgb(253, 253, 253);
+  border-color: rgb(28, 34, 33);
 }
 #reset:hover {
-  opacity: 0.9;
+  opacity: 1;
+  color: rgb(253, 253, 253);
+  background-color: rgb(138, 17, 25);
+  border-color: rgb(253, 253, 253);
 }
 
 button:disabled,
